@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Bryan's GitHub Page</title>
 
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -12,6 +14,20 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script>
+		$(function(){
+			$quoteEl = $('.js-quote');
+			renderQuote = function(data) {
+				$quoteEl.html(data)
+			};
+			getQuote = function() {
+				$.get('https://api.github.com/zen', renderQuote)
+			}
+				$('.new-quote').click(function(){getQuote();})
+			}
+		)
+	</script>
 
 </head>
 <body>
