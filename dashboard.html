@@ -51,6 +51,45 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h2>Quote Stream</h2>
+
+				<table class="table table-striped table-hover">
+				  <thead>
+				  	<td><i class="glyphicon glyphicon-heart"></i></td>
+				  	<td>Quote</td>
+				  	<td>Author</td>
+				  	<td>Posted By</td>
+				  </thead>
+				  <tr>
+				  	<td><input type="checkbox" value=""></td>
+				  	<td>Never Give Up, Never Surrender!</td>
+				  	<td>Tim Allen</td>
+				  	<td><a href="">@bryan</a></td>
+				  </tr>
+				  <tr class="success">
+				  	<td><input type="checkbox" value="" checked></td>
+				  	<td>Winners never quit and quitters never win.</td>
+				  	<td>Vince Lombardi</td>
+				  	<td><a href="">@stevenhsieh</a></td>
+				  </tr>
+				  <tr>
+				  	<td><input type="checkbox" value=""></td>
+				  	<td>Don't take life too seriously. You'll never get out of it alive.</td>
+				  	<td>Elbert Hubbard</td>
+				  	<td><a href="">@arb</a></td>
+				  </tr>
+				  <tr class="success">
+				  	<td><input type="checkbox" value="" checked></td>
+				  	<td>Age is a case of mind over matter. If you don't mind, it don't matter.</td>
+				  	<td>Satchel Paige</td>
+				  	<td><a href="">@tfurukawa</a></td>
+				  </tr>
+				  <tr>
+				  	<td><input type="checkbox" value=""></td>
+				  	<td>Our scientific power has outrun our spiritual power. We have guided missiles and misguided men.</td>
+				  	<td>Martin Luther King, Jr.</td>
+				  	<td><a href="">@jax</a></td>
+				  </tr>
+				</table>
 		
 				<!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -66,27 +105,35 @@
 				        <h4 class="modal-title" id="myModalLabel">Post A New Quote</h4>
 				      </div>
 				      <div class="modal-body">
-						<div class="input-group">
-						  <span class="input-group-addon" id="basic-addon1">Quote</span>
-						  <input type="text" class="form-control" placeholder="Enter your new quote here..." aria-describedby="basic-addon1">
+				      	<form>
+						  <div class="form-group">
+							<div class="input-group">
+							  <span class="input-group-addon" id="basic-addon1">Quote</span>
+							  <input type="text" class="form-control" placeholder="Enter your new quote here..." aria-describedby="basic-addon1">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<div class="input-group">
+							  <span class="input-group-addon" id="basic-addon1">Author</span>
+							  <input type="text" class="form-control" placeholder="Who said this?" aria-describedby="basic-addon1">
+							</div>
+						  </div>
+						  <div class="form-group">
+					        <div class="dropdown">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							    Category
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inspirational Quote</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sports Quote</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Funny Quote</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Birthday Quote</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Scientific Quote</a></li>
+							  </ul>
+							</div>
 						</div>
-						<div class="input-group">
-						  <span class="input-group-addon" id="basic-addon1">Author</span>
-						  <input type="text" class="form-control" placeholder="Who said this?" aria-describedby="basic-addon1">
-						</div>
-				        <div class="dropdown">
-						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-						    Category
-						    <span class="caret"></span>
-						  </button>
-						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inspirational Quote</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sports Quote</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Funny Quote</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Birthday Quote</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Scientific Quote</a></li>
-						  </ul>
-						</div>
+						</form>
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
@@ -94,52 +141,7 @@
 				      </div>
 				    </div>
 				  </div>
-				</div>
-
-				<ul class="list-unstyled">
-					<li>
-						<div class="input-group">
-					      <span class="input-group-addon">
-					        <input type="checkbox" aria-label="...">
-					      </span>
-					      <input type="text" class="form-control" aria-label="..." value="Never give up, never surrender! - Tim Allen, Galaxy Quest" checked>
-					    </div><!-- /input-group -->
-					</li>
-					<li>
-						<div class="input-group">
-					      <span class="input-group-addon">
-					        <input type="checkbox" aria-label="...">
-					      </span>
-					      <input type="text" class="form-control" aria-label="..." value="Never give up, never surrender! - Tim Allen, Galaxy Quest">
-					    </div><!-- /input-group -->
-					</li>
-					<li>
-						<div class="input-group">
-					      <span class="input-group-addon">
-					        <input type="checkbox" aria-label="...">
-					      </span>
-					      <input type="text" class="form-control" aria-label="..." value="Never give up, never surrender! - Tim Allen, Galaxy Quest">
-					    </div><!-- /input-group -->
-					</li>
-					<li>
-						<div class="input-group">
-					      <span class="input-group-addon">
-					        <input type="checkbox" aria-label="...">
-					      </span>
-					      <input type="text" class="form-control" aria-label="..." value="Never give up, never surrender! - Tim Allen, Galaxy Quest">
-					    </div><!-- /input-group -->
-					</li>
-					<li>
-						<div class="input-group">
-					      <span class="input-group-addon">
-					        <input type="checkbox" aria-label="...">
-					      </span>
-					      <input type="text" class="form-control" aria-label="..." value="Never give up, never surrender! - Tim Allen, Galaxy Quest">
-					    </div><!-- /input-group -->
-					</li>
-				</ul>
-
-			    
+				</div>			    
 
 			</div>
 			<div class="col-md-6">
@@ -154,7 +156,22 @@
 				    </div>
 				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        <blockquote>
+						  <p>Never Give Up, Never Surrender!</p>
+						  <footer>Tim Allen in <cite title="Source Title">Galaxy Quest</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Never Give Up, Never Surrender!</p>
+						  <footer>Tim Allen in <cite title="Source Title">Galaxy Quest</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Never Give Up, Never Surrender!</p>
+						  <footer>Tim Allen in <cite title="Source Title">Galaxy Quest</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Never Give Up, Never Surrender!</p>
+						  <footer>Tim Allen in <cite title="Source Title">Galaxy Quest</cite></footer>
+						</blockquote>
 				      </div>
 				    </div>
 				  </div>
@@ -168,7 +185,22 @@
 				    </div>
 				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        <blockquote>
+						  <p>Winners never quit and quitters never win.</p>
+						  <footer>Vince Lombardi <cite title="Source Title">Green Bay Packers</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Winners never quit and quitters never win.</p>
+						  <footer>Vince Lombardi <cite title="Source Title">Green Bay Packers</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Winners never quit and quitters never win.</p>
+						  <footer>Vince Lombardi <cite title="Source Title">Green Bay Packers</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Winners never quit and quitters never win.</p>
+						  <footer>Vince Lombardi <cite title="Source Title">Green Bay Packers</cite></footer>
+						</blockquote>
 				      </div>
 				    </div>
 				  </div>
@@ -182,7 +214,22 @@
 				    </div>
 				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        <blockquote>
+						  <p>Don't take life too seriously. You'll never get out of it alive.</p>
+						  <footer>Elbert Hubbard <cite title="Source Title">American Write, Publisher, Artist, Philosopher</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Don't take life too seriously. You'll never get out of it alive.</p>
+						  <footer>Elbert Hubbard <cite title="Source Title">American Write, Publisher, Artist, Philosopher</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Don't take life too seriously. You'll never get out of it alive.</p>
+						  <footer>Elbert Hubbard <cite title="Source Title">American Write, Publisher, Artist, Philosopher</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Don't take life too seriously. You'll never get out of it alive.</p>
+						  <footer>Elbert Hubbard <cite title="Source Title">American Write, Publisher, Artist, Philosopher</cite></footer>
+						</blockquote>
 				      </div>
 				    </div>
 				  </div>
@@ -196,7 +243,22 @@
 				    </div>
 				    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        <blockquote>
+						  <p>Age is a case of mind over matter. If you don't mind, it don't matter.</p>
+						  <footer>Satchel Paige <cite title="Source Title">American Baseball Player</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Age is a case of mind over matter. If you don't mind, it don't matter.</p>
+						  <footer>Satchel Paige <cite title="Source Title">American Baseball Player</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Age is a case of mind over matter. If you don't mind, it don't matter.</p>
+						  <footer>Satchel Paige <cite title="Source Title">American Baseball Player</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Age is a case of mind over matter. If you don't mind, it don't matter.</p>
+						  <footer>Satchel Paige <cite title="Source Title">American Baseball Player</cite></footer>
+						</blockquote>
 				      </div>
 				    </div>
 				  </div>
@@ -210,7 +272,22 @@
 				    </div>
 				    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        <blockquote>
+						  <p>Our scientific power has outrun our spiritual power. We have guided missiles and misguided men.</p>
+						  <footer>Martin Luther King, Jr. <cite title="Source Title">American Civil Rights Activist</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Our scientific power has outrun our spiritual power. We have guided missiles and misguided men.</p>
+						  <footer>Martin Luther King, Jr. <cite title="Source Title">American Civil Rights Activist</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Our scientific power has outrun our spiritual power. We have guided missiles and misguided men.</p>
+						  <footer>Martin Luther King, Jr. <cite title="Source Title">American Civil Rights Activist</cite></footer>
+						</blockquote>
+				        <blockquote>
+						  <p>Our scientific power has outrun our spiritual power. We have guided missiles and misguided men.</p>
+						  <footer>Martin Luther King, Jr. <cite title="Source Title">American Civil Rights Activist</cite></footer>
+						</blockquote>
 				      </div>
 				    </div>
 				  </div>
